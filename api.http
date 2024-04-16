@@ -1,0 +1,36 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+    "title": 123,
+    "details": null,
+    "maximumAttendees" : 1
+}
+
+###
+
+POST http://localhost:3333/events/290f4c1a-7055-4419-bd35-203619c9cba4/attendees
+Content-Type: application/json
+
+{
+    "name": "William Amorim",
+    "email": "amorim2.facape@gmail.com"
+
+}
+
+
+###
+
+GET http://localhost:3333/events/290f4c1a-7055-4419-bd35-203619c9cba4
+
+###
+
+GET http://localhost:3333/attendees/8/badge   
+
+###
+
+GET http://localhost:3333/attendees/8/check-in   
+
+###
+
+GET http://localhost:3333/events/290f4c1a-7055-4419-bd35-203619c9cba4/attendees
